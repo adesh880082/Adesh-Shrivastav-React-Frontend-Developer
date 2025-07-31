@@ -1,0 +1,151 @@
+h3{
+  margin: 5px;
+}
+div{
+  margin: 5px;
+}
+p{
+  margin: 5px;
+}
+.page {
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+/* Base grid setup for all themes */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Base card */
+.card {
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card img {
+  max-width: 170px;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.stars {
+  color: #ffc107;
+}
+
+
+.buttonGroup {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.buttonGroup2 {
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* --------------------- */
+/* THEME 1: Minimalist Light */
+.theme1 .grid {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.theme1 .card {
+  background-color: white;
+}
+
+/* --------------------- */
+/* THEME 2: Dark w/ Sidebar */
+.theme2 .grid {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  font-family: Georgia, serif;
+}
+
+.theme2 .card {
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+  border-color: #444;
+}
+
+/* --------------------- */
+/* THEME 3: Playful Card Grid */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.theme3 .grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  font-family: 'Pacifico', cursive;
+}
+
+.theme3 .card {
+  background-color: #ffefd5;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.theme3 .card:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* Default responsive layout for all themes */
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .card img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}

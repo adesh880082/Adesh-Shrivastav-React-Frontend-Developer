@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react';
+import Header from './components/Header';
+import AppRoutes from './routes';
+import { useTheme } from './hooks/useTheme';
+import Sidebar from './components/Sidebar';
 
 function App() {
+  const { theme } = useTheme();
+  const [fadeClass, setFadeClass] = useState("fade-in");
+
+  useEffect(() => {
+    setFadeClass("fade-out");
+    const timeout = setTimeout(() => setFadeClass("fade-in"), 300);
+    return () => clearTimeout(timeout);
+  }, [theme]);
+
+  const isSidebarVisible = theme === "theme2";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={fadeClass}>
+      <Header />
+      {isSidebarVisible && <Sidebar />}
+      <main style={{marginTop: "80px", flexGrow: 1}}>
+        <AppRoutes />
+      </main>
     </div>
   );
 }
