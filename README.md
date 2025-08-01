@@ -62,11 +62,11 @@ src/
 │   └── Page.module.css
 │
 |── themes/                    # Theme context and CSS
-|   ├── theme1.css
-|   ├── theme2.css
-|   ├── theme3.css
-|   ├── ThemeContext.tsx
-|   └── ThemeProvider.tsx
+│   ├── theme1.css
+│   ├── theme2.css
+│   ├── theme3.css
+│   ├── ThemeContext.tsx
+│   └── ThemeProvider.tsx
 ├── tsconfig.json
 └── package.json
 ```
