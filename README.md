@@ -76,11 +76,11 @@ npm start
 ```
 
 🛒 API Reference
-FakeStoreAPI – https://fakestoreapi.com/products
+- FakeStoreAPI – https://fakestoreapi.com/products
 
 👨‍💻 Author
-Adesh Shrivastav
+- Adesh Shrivastav
 🔗 [GitHub Profile](https://github.com/adesh880082/)
 
 🌐 Live Demo
-🔗 https://themeswitcherhipster.netlify.app/
+- 🔗 https://themeswitcherhipster.netlify.app/
