@@ -61,7 +61,7 @@ src/
 │   ├── Home.module.css
 │   └── Page.module.css
 │
-|── themes/                    # Theme context and CSS
+│── themes/                    # Theme context and CSS
 │   ├── theme1.css
 │   ├── theme2.css
 │   ├── theme3.css
