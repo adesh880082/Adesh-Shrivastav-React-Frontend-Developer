@@ -48,27 +48,39 @@ theme-switcher-app/
 │   └── index.css
 ├── tsconfig.json
 └── package.json
-
+```
 📸 Screenshots
+<img width="1901" height="972" alt="image" src="https://github.com/user-attachments/assets/26f27c6b-164a-44f8-8956-db0f70ff6017" />
+
+<img width="1918" height="952" alt="Theme 02" src="https://github.com/user-attachments/assets/7e258028-25f8-40e8-b6a7-b527e65514a5" />
+
+<img width="1918" height="966" alt="image" src="https://github.com/user-attachments/assets/5b4943d4-8a5f-4864-9472-7799bfd29302" />
+
 
 
 🧑‍💻 Getting Started
 1. Clone the Repository
+```bash
 git clone https://github.com/adesh880082/Adesh-Shrivastav-React-Frontend-Developer.git
 cd Adesh-Shrivastav-React-Frontend-Developer
+```
 
 2. Install Dependencies
+```bash
 npm install
+```
 
 3. Run the App
+```bash
 npm start
+```
 
 🛒 API Reference
 FakeStoreAPI – https://fakestoreapi.com/products
 
 👨‍💻 Author
 Adesh Shrivastav
-🔗 GitHub Profile
+🔗 [GitHub Profile](https://github.com/adesh880082/)
 
 🌐 Live Demo
 🔗 https://themeswitcherhipster.netlify.app/
