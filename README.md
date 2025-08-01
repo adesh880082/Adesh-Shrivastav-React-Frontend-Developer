@@ -33,19 +33,40 @@ This is a **React + TypeScript** application built by **Adesh Shrivastav** to de
 theme-switcher-app/
 │
 ├── public/                 # HTML template
-├── src/
-│   ├── components/         # Reusable UI components (optional)
-│   ├── context/
-│   │   └── ThemeContext.tsx
-│   ├── hooks/
-│   │   └── useTheme.ts
-│   ├── pages/
-│   │   └── Home.tsx        # Product page with theme applied
-│   ├── styles/
-│   │   └── Home.module.css
-│   ├── App.tsx
-│   ├── index.tsx
-│   └── index.css
+src/
+│
+├── App.css
+├── App.test.tsx
+├── App.tsx
+├── index.css
+├── index.tsx
+├── logo.svg
+├── react-app-env.d.ts
+├── reportWebVitals.ts
+├── routes.tsx
+├── setupTests.ts
+│
+├── components/                # Reusable UI components
+│   ├── Header.tsx
+│   ├── Sidebar.tsx
+│   └── ThemeDropdown.tsx
+│
+├── hooks/                     # Custom hooks
+│   └── useTheme.ts
+│
+├── pages/                     # Route-based pages
+│   ├── About.tsx
+│   ├── Contact.tsx
+│   ├── Home.tsx
+│   ├── Home.module.css
+│   └── Page.module.css
+│
+|── themes/                    # Theme context and CSS
+|   ├── theme1.css
+|   ├── theme2.css
+|   ├── theme3.css
+|   ├── ThemeContext.tsx
+|   └── ThemeProvider.tsx
 ├── tsconfig.json
 └── package.json
 ```
